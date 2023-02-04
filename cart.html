@@ -23,14 +23,15 @@
 		         <ul id="MenuItems">  
 			     <li><a href="index.html">Home</a></li>
 			     <li><a href="Products.html">Products</a></li>
-			     <li><a href="">About</a></li>
+			     <li><a href="about.html">About</a></li>
 			     <li><a href="">Contact</a></li>
-			     <li><a href="account.html">Account</a></li>
+			     <!-- <li><a href="account.html">Account</a></li> -->
 			     </ul>  
 		        </nav>
 		         <a href="cart.html"><img src="image/cart.png" width="30px" height="30px"></a>
 		         <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
-		        </div>	 
+		        </div>	
+
     
 		   </div>     
   		</div>
@@ -125,14 +126,14 @@
 	 <div class="footer">
 		<div class="small-container">
 				<div class="row">
-				<div class="footer-col-1">
+				<!-- <div class="footer-col-1">
 					<h3> Download Our App</h3>
 					<p>Download App for Android and ios mobile phone.</p>
 				    <div class="app-logo">
 						<img src="image/play-store.png">
 						<img src="image/app-store.png">
 					</div>
-				</div>
+				</div> -->
 				<div class="footer-col-2">
 					<img src="image/logo.jpg">
 					<p>Our Purpose Is to Sustainbly Make the Pleasure Android
@@ -150,10 +151,13 @@
 				<div class="footer-col-4">
 					<h3>Follow Us</h3>
 					<ul>
-						<li>Fasebook</li>
-						<li>Twitter</li>
-						<li>Instagram</li>
-						<li>Youtube</li>
+						<div class="icons">
+                            <i class="fa fa-facebook"> Fasebook</i>
+                            <i class="fa fa-twitter"> Twitter</i>
+                            <i class="fa fa-instagram"> Instagram</i>
+                            <i class="fa fa-linkedin"> Linkedin</i>
+                        
+                        </div>
 					</ul>
 				</div>
 			</div>
@@ -163,22 +167,6 @@
 		</div>
 	 </div>
 	</div>
-<script>
-	var MenuItems = document.getElementById("MenuItems");
-
-	MenuItems.style.maxHeight = "0px";
-
-	function menutoggle(){
-		if(MenuItems.style.maxHeight == "0px")
-		
-		{
-			MenuItems.style.maxHeight = "200px";
-		}
-		else
-		{
-			MenuItems.style.maxHeight= "0px";
-		}
-	}
 
 </script>
 

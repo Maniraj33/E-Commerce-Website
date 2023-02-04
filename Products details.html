@@ -23,14 +23,17 @@
 		         <ul id="MenuItems">  
 			     <li><a href="index.html">Home</a></li>
 			     <li><a href="Products.html">Products</a></li>
-			     <li><a href="">About</a></li>
+			     <li><a href="about.html">About</a></li>
 			     <li><a href="">Contact</a></li>
-			     <li><a href="account.html">Account</a></li>
+			     <!-- <li><a href="account.html">Account</a></li> -->
 			     </ul>  
 		        </nav>
 		         <a href="cart.html"><img src="image/cart.png" width="30px" height="30px"></a>
 		         <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
-		        </div>	 
+		        </div>
+				<div onclick="upWindow()" id="upwiindow" class="to-top">
+					<i class="fa fa-arrow-up"></i>
+				</div>	 
     
 		   </div>     
   		</div>
@@ -73,7 +76,7 @@
                         <option>Small</option>
                     </select>
                     <input type="number" value="1">
-                    <a href="cart.html"class="btn"> Add to Cart</a>
+                    <a href="cart.html"class="btn-cart"> Add to Cart</a>
                     
                     <h3>Product Details <i class="fa fa-indent"></i></h3>
                 </br>
@@ -85,7 +88,7 @@
 		<div class="small-container">
 			<div class="row row-2">
 				<h2>Related Products</h2>
-				<p> Viwe More</p>
+				<p> View More</p>
 			</div>
 		</div>
 
@@ -148,14 +151,14 @@
 	 <div class="footer">
 		<div class="small-container">
 				<div class="row">
-				<div class="footer-col-1">
+				<!-- <div class="footer-col-1">
 					<h3> Download Our App</h3>
 					<p>Download App for Android and ios mobile phone.</p>
 				    <div class="app-logo">
 						<img src="image/play-store.png">
 						<img src="image/app-store.png">
 					</div>
-				</div>
+				</div> -->
 				<div class="footer-col-2">
 					<img src="image/logo.jpg">
 					<p>Our Purpose Is to Sustainbly Make the Pleasure Android
@@ -173,10 +176,13 @@
 				<div class="footer-col-4">
 					<h3>Follow Us</h3>
 					<ul>
-						<li>Fasebook</li>
-						<li>Twitter</li>
-						<li>Instagram</li>
-						<li>Youtube</li>
+						<div class="icons">
+							<i class="fa fa-facebook"> Fasebook</i>
+							<i class="fa fa-twitter"> Twitter</i>
+							<i class="fa fa-instagram"> Instagram</i>
+							<i class="fa fa-linkedin"> Linkedin</i>
+						
+						</div>
 					</ul>
 				</div>
 			</div>
@@ -201,6 +207,10 @@
 		{
 			MenuItems.style.maxHeight= "0px";
 		}
+	}
+	document.getElementById('upwiindow').addEventListener("click", myFunction);
+		function myFunction() {
+		 window.scrollTo(0,0)
 	}
 
 </script>
